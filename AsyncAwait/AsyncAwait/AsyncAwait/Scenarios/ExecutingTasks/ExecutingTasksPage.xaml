@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AsyncAwait.Views.ExecutingTasksPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <ScrollView Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+                <Label LineBreakMode="WordWrap" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Text="{Binding Status}" Margin="8"/>
+            </ScrollView>
+            <Button Grid.Row="1" Command="{Binding InvokeTaskCommand}" Text="Invoke Task"/>
+            <Button Grid.Row="1" Grid.Column="1" Command="{Binding TaskRunCommand}" Text="Task.Run()"/>
+            <Button Grid.Row="2"  Command="{Binding RunSynchronouslyCommand}" Text=".RunSynchronously()"/>
+            <Button  Grid.Row="2" Grid.Column="1"  Command="{Binding ContinueWithCommand}" Text=".ContinueWith()"/>
+            <Button  Grid.Row="3"  Command="{Binding StartCommand}" Text=".Start()"/>
+            <Button Grid.Row="3" Grid.Column="1"  Command="{Binding StartAndWaitCommand}" Text=".Start() .Wait()"/>
+            <Button  Grid.Row="4"  Command="{Binding ResultCommand}" Text=".Result"/>
+            <Button Grid.Row="4" Grid.Column="1"  Command="{Binding ResultInTaskRunCommand}" Text="Task.Run(.Result)"/>
+            <Button  Grid.Row="5"  Command="{Binding WaitCommand}" Text=".Wait()"/>
+            <Button Grid.Row="5" Grid.Column="1"  Command="{Binding AwaiterResultCommand}" Text=".GetAwaiter.GetResult()"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

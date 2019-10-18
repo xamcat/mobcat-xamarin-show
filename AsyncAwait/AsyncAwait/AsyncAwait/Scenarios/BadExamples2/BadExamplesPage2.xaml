@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AsyncAwait.Views.BadExamplesPage2">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <ScrollView Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand">
+                <Label x:Name="StatusLabel" LineBreakMode="WordWrap" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Text="{Binding Status}" Margin="8"/>
+            </ScrollView>
+            <Button Grid.Row="1" Text="Bad UI update" Clicked="HandleBadUIUpdateClicked"/>
+            <Button Grid.Row="1" Grid.Column="1" Text="Good UI update" Clicked="HandleGoodUIUpdateClicked"/>
+            <Button Grid.Row="2"  Command="{Binding BadExceptionHandling}" Text="Bad Exception Handling"/>
+            <Button  Grid.Row="2" Grid.Column="1"  Command="{Binding GoodExceptionHandling}" Text="Good exception handling"/>
+            <Button  Grid.Row="3"  Command="{Binding BadTimeoutCommand}" Text="Bad timeout"/>
+            <Button Grid.Row="3" Grid.Column="1"  Command="{Binding GoodTimeoutCommand}" Text="Good timeout"/>
+            <Button  Grid.Row="4"  Command="{Binding BadTaskCompletionSource}" Text="Bad TaskCompletionSource"/>
+            <Button Grid.Row="4" Grid.Column="1"  Command="{Binding GoodTaskCompletionSource}" Text="Good TaskCompletionSource"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
