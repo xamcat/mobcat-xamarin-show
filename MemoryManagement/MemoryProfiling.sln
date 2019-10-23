@@ -1,0 +1,26 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryProfiling.iOS", "MemoryProfiling\MemoryProfiling.iOS.csproj", "{126E763F-F910-4FB6-B7EF-6E5FB81A18F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		PoopMore|iPhoneSimulator = PoopMore|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{126E763F-F910-4FB6-B7EF-6E5FB81A18F6}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{126E763F-F910-4FB6-B7EF-6E5FB81A18F6}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{126E763F-F910-4FB6-B7EF-6E5FB81A18F6}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{126E763F-F910-4FB6-B7EF-6E5FB81A18F6}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{126E763F-F910-4FB6-B7EF-6E5FB81A18F6}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{126E763F-F910-4FB6-B7EF-6E5FB81A18F6}.Debug|iPhone.Build.0 = Debug|iPhone
+		{126E763F-F910-4FB6-B7EF-6E5FB81A18F6}.Release|iPhone.ActiveCfg = Release|iPhone
+		{126E763F-F910-4FB6-B7EF-6E5FB81A18F6}.Release|iPhone.Build.0 = Release|iPhone
+		{126E763F-F910-4FB6-B7EF-6E5FB81A18F6}.PoopMore|iPhoneSimulator.ActiveCfg = PoopMore|iPhoneSimulator
+		{126E763F-F910-4FB6-B7EF-6E5FB81A18F6}.PoopMore|iPhoneSimulator.Build.0 = PoopMore|iPhoneSimulator
+	EndGlobalSection
+EndGlobal
