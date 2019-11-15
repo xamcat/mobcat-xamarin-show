@@ -6,4 +6,5 @@ Code &amp; resources for the Xamarin Show [Channel9 Xamarin Show](https://channe
 
 - Async / Await Basics
 - Async / Await Advanced
+- Bring C++ to Xamarin
 - Memory Profiling
